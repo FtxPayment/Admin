@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spaceman Crash (Frontend Demo)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/workspace/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo">🚀</span>
+        <span class="title">Spaceman Crash</span>
+      </div>
+      <div class="user-balance">
+        Saldo: <span id="balance">Rp 1.000.000</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="game-panel card">
+        <div class="game-stage">
+          <div id="round-status" class="round-status">Menunggu ronde...</div>
+          <div id="multiplier" class="multiplier">1.00x</div>
+          <div id="crash-text" class="crash-text hidden">CRASHED @ 0.00x</div>
+          <div id="next-round" class="next-round hidden">Mulai ronde berikutnya dalam <span id="countdown">5</span> detik</div>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="betting card">
+          <h2>Betting Panel</h2>
+          <div class="bet-row">
+            <label for="bet-amount">Jumlah Bet</label>
+            <div class="bet-input-group">
+              <input id="bet-amount" type="number" min="1000" step="1000" value="10000" />
+              <div class="quick-buttons">
+                <button data-quick="10000">10rb</button>
+                <button data-quick="20000">20rb</button>
+                <button data-quick="50000">50rb</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bet-row">
+            <label for="auto-withdraw">Auto Withdraw (x)</label>
+            <div class="auto-withdraw-group">
+              <input id="auto-withdraw-enabled" type="checkbox" />
+              <input id="auto-withdraw" type="number" min="1.10" step="0.01" value="2.00" />
+            </div>
+          </div>
+
+          <div class="bet-actions">
+            <button id="start-bet" class="primary">Start Betting</button>
+            <button id="withdraw" class="warning" disabled>Withdraw</button>
+            <button id="repeat-bet" class="secondary">Repeat Last Bet</button>
+          </div>
+
+          <div id="bet-note" class="bet-note"></div>
+        </section>
+
+        <section class="players card">
+          <h2>Pemain (Ronde Aktif)</h2>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Bet</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="players-body">
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <span>Frontend Demo • No backend • v0.1</span>
+    </footer>
+  </div>
+
+  <script src="/workspace/script.js"></script>
+  <noscript>Aktifkan JavaScript untuk memainkan game.</noscript>
+  
+</body>
+</html>
+
