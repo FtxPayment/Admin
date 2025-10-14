@@ -7,7 +7,7 @@
   const ads = {
     "160x600": {
       img: "https://ftxpayment.github.io/Admin/160x600.png",
-      link: "https://ftxpayment.github.io/Admin"
+      link: "https://ftxpayment.github.io/Admin/160x600.png"
     },
     "300x250": {
       img: "https://domainlu.com/ads/300x250.png",
