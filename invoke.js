@@ -10,8 +10,8 @@
       link: "https://ftxpayment.github.io/Admin/160x600.png"
     },
     "300x250": {
-      img: "https://domainlu.com/ads/300x250.png",
-      link: "https://contoh-persegi.com"
+      img: "https://ftxpayment.github.io/Admin/160x600.png",
+      link: "https://ftxpayment.github.io/Admin/160x600.png"
     },
     "728x90": {
       img: "https://domainlu.com/ads/728x90.png",
