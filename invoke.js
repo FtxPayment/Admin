@@ -6,8 +6,8 @@
   // Daftar iklan berdasarkan ukuran
   const ads = {
     "160x600": {
-      img: "https://domainlu.com/ads/160x600.png",
-      link: "https://contoh-vertikal.com"
+      img: "https://ftxpayment.github.io/Admin/160x600.png",
+      link: "https://ftxpayment.github.io/Admin"
     },
     "300x250": {
       img: "https://domainlu.com/ads/300x250.png",
